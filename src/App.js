@@ -75,7 +75,7 @@ function App() {
 
 return (
   <div id='everything'>
-    <Student studentData={studentData}/>
+    {studentData.students.map(element => <Student name={element.name} bio={element.bio} scores={element.scores}/>)}
   </div>
 )
 }
